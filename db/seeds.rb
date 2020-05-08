@@ -21,7 +21,6 @@ ActiveRecord::Base.transaction do
     a4 = Artwork.create!(title: "Second", image_url: "ofthesecond.org", artist_id: 2)
     a5 = Artwork.create!(title: "MyPaintingOfACar", image_url: "paintedcar.org", artist_id: 3)
 
-
     as1 = ArtworkShare.create!(artwork_id: 1, viewer_id: 2)
     as2 = ArtworkShare.create!(artwork_id: 1, viewer_id: 3)
     as3 = ArtworkShare.create!(artwork_id: 3, viewer_id: 1)
